@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ProductForm from "../components/form";
-import ProductTable from "../components/Tabel";
+import ProductForm from "../components/ProductForm";
+import ProductTable from "../components/ProductTabel";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
