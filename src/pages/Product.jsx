@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ProductForm from "../components/form";
 import ProductTable from "../components/Tabel";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Product() {
   const [products, setProducts] = useState([]);
@@ -9,13 +11,9 @@ function Product() {
   const [stock, setStock] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault(); 
+    e.preventDefault();
 
-
-    setProducts((prevProducts) => [
-      ...prevProducts,
-      {name, price, stock},
-    ]);
+    setProducts((prevProducts) => [...prevProducts, { name, price, stock }]);
 
     setName("");
     setPrice("");
@@ -23,7 +21,9 @@ function Product() {
   }
 
   return (
-      <div className="max-w-xl m-auto mt-20">
+    <>
+      <Header />
+      <div className="max-w-xl m-auto my-20">
         <ProductForm
           name={name}
           price={price}
@@ -36,6 +36,8 @@ function Product() {
 
         <ProductTable products={products} />
       </div>
+      <Footer />
+    </>
   );
 }
 

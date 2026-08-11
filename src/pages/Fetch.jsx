@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import fetchPoke from "../utility/fetch";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Fetch() {
   const [datas, setData] = useState([]);
@@ -17,6 +19,7 @@ function Fetch() {
   }, []);
   return (
     <>
+      <Header />
       <div className="h-10">
         <form className="flex justify-center gap-3 mt-5">
           <input
@@ -65,6 +68,7 @@ function Fetch() {
             );
           })}
       </div>
+      <Footer />
     </>
   );
 }

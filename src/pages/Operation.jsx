@@ -1,10 +1,13 @@
 // Minitask 1
 import { useState } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Operation() {
   let [num, setNum] = useState(0);
   return (
     <>
+      <Header />
       <div className="flex justify-center items-center h-full gap-10">
         <button
           onClick={() => {
@@ -32,6 +35,7 @@ function Operation() {
           Tambah
         </button>
       </div>
+      <Footer />
     </>
   );
 }
