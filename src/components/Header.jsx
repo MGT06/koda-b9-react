@@ -9,12 +9,12 @@ function Header() {
         </span>
 
         <ul className="flex gap-5 text-sm text-slate-600">
+          <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/"}>Home</Link></li>
           <li className="hover:text-orange-500 cursor-pointer">
-            <Link to={"/"}>Operation</Link>
+            <Link to={"/operation"}>Operation</Link>
           </li>
           <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/fetch"}>Fetch</Link></li>
           <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/product"}>Product</Link></li>
-          <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/review"}>Review</Link></li>
         </ul>
       </nav>
     </header>

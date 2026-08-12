@@ -8,10 +8,10 @@ import Review from "./pages/Review";
 function Routing(){
     return(
         <Routes>
-            <Route path="/" element={<Operation />} />
+            <Route path="/" element={<Review />} />
+            <Route path="/operation" element={<Operation />} />
             <Route path="/fetch" element={<Fetch />} />
             <Route path="/product" element={<Product />} />
-            <Route path="/review" element={<Review />} />
         </Routes>
     )
 }
