@@ -5,8 +5,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Review() {
-  const [reviews, setReviews] = useState(
-    JSON.parse(localStorage.getItem("product_reviews")),
+  const [reviews, setReviews] = useState(() => {
+    const data = JSON.parse(localStorage.getItem("product_reviews"))
+    if(!data){
+      return []
+    }
+    return JSON.parse(localStorage.getItem("product_reviews"))
+  }
   );
 
   useEffect(() => {
