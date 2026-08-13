@@ -1,3 +1,9 @@
+/**
+ *  Displays the list of products in a table.
+ * @param {Object} props
+ * @param {Object[]} props.products
+ * @returns 
+ */
 function ProductTable({ products }) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">

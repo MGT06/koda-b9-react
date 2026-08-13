@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {string} url 
+ * @param {Object} option 
+ * @returns 
+ */
+
 async function fetchPoke(url, option = {}) {
   const response = await fetch(url, option);
   if (!response.ok) throw "Gagal Fetching";

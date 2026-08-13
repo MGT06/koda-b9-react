@@ -1,3 +1,10 @@
+/**
+ * Displays the list of submitted reviews.
+ * @param {Object} props
+ * @param {Object[]} props.reviews
+ * @returns 
+ */
+
 function ReviewList({ reviews }) {
   return (
     <div>

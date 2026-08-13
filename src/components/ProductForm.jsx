@@ -1,3 +1,16 @@
+/**
+ * Form for adding a new product (name, price, stock).
+ * @param {Object} props
+ * @param {String} props.name
+ * @param {Number} props.price
+ * @param {Number} props.stock
+ * @param {import("react").Dispatch<import("react").SetStateAction<String>>} props.onNameChange
+ * @param {import("react").Dispatch<import("react").SetStateAction<Number>>} props.onPriceChange
+ * @param {import("react").Dispatch<import("react").SetStateAction<Number>>} props.onStockChange
+ * @param {import("react").ReactEventHandler} props.onSubmit
+ * @returns 
+ */
+
 function ProductForm({
   name,
   price,

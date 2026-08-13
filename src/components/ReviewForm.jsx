@@ -1,3 +1,10 @@
+/**
+ *  Form for submitting a new review (name & message).
+ * @param {Object} props 
+ * @param {import("react").Dispatch<import("react").SetStateAction<String>>} props.onAddReview
+ * @returns 
+ */
+
 function ReviewForm({ onAddReview }) {
   function handleSubmit(e) {
     e.preventDefault();
