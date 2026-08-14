@@ -24,11 +24,30 @@ async function fetchPoke(url, option = {}) {
       return pokemonTypes.type.name;
     });
 
+    const getAbilities = detailResponseJSON.abilities.map((ability) => {
+      return ability.ability.name
+    })
+
+    const getMove = detailResponseJSON.moves.map((move) => {
+        return move.move.name
+    })
+
+    const getStats = detailResponseJSON.stats.map((stat) => {
+      return {
+        name: stat.stat.name,
+        base: stat.base_stat,
+      }
+    })
+
     return{
         id: getId,
         name: poke.name,
+        ability: getAbilities,
+        move: getMove,
+        stats: getStats,
         types: getTypesName,
         img: spritesImage,
+        weight: detailResponseJSON.weight
     }
   });
   const pokePromise = await Promise.all(getDetailPoke)

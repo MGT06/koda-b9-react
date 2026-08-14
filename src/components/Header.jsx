@@ -13,8 +13,9 @@ function Header() {
           <li className="hover:text-orange-500 cursor-pointer">
             <Link to={"/operation"}>Operation</Link>
           </li>
-          <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/fetch"}>Fetch</Link></li>
+          <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/pokemon"}>Pokemon</Link></li>
           <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/product"}>Product</Link></li>
+          <li className="hover:text-orange-500 cursor-pointer"> <Link to={"/controlled"}>FormControlled</Link></li>
         </ul>
       </nav>
     </header>
