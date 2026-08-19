@@ -6,6 +6,9 @@ import Product from "./pages/Product";
 import Review from "./pages/Review";
 import FormControlled from "./pages/FormControlled";
 import Detail from "./pages/Detail";
+import Tes from "./pages/tes";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 
 function Routing(){
     return(
@@ -18,6 +21,9 @@ function Routing(){
             </Route>
             <Route path="/product" element={<Product />} />
             <Route path="/controlled" element={<FormControlled />} />
+            <Route path="/tes" element={<Tes />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/profile" element={<Profile />} />
         </Routes>
     )
 }
