@@ -9,6 +9,7 @@ import Detail from "./pages/Detail";
 import Tes from "./pages/tes";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Film from "./pages/Film";
 
 function Routing(){
     return(
@@ -24,6 +25,7 @@ function Routing(){
             <Route path="/tes" element={<Tes />} />
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/film" element={<Film />} />
         </Routes>
     )
 }
