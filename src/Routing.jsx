@@ -10,6 +10,7 @@ import Tes from "./pages/tes";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Film from "./pages/Film";
+import ToDoList from "./pages/ToDoList";
 
 function Routing(){
     return(
@@ -26,6 +27,7 @@ function Routing(){
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/film" element={<Film />} />
+            <Route path="/todolist" element={<ToDoList/>} />
         </Routes>
     )
 }

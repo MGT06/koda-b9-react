@@ -18,8 +18,8 @@ function TableReviewFilm() {
         </tr>
       </thead>
       <tbody className="text-center">
-        {review.data.map((data) => (
-          <tr key={data.name} className="border-b hover:bg-gray-50">
+        {review.data.map((data, idx) => (
+          <tr key={idx} className="border-b hover:bg-gray-50">
             <td className="border px-3 py-2">{data.name}</td>
             <td className="border px-3 py-2">{data.umur}</td>
             <td className="border px-3 py-2">{data.jk}</td>
